@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./images/img-1.jpg" class="main-product-img" id="main-product-img"/>
+
+    <div class="product-img-container">
+        <img src="./images/img-1.jpg" class="product-img" onclick="changeImage('./images/img-1.jpg')"/>
+        <img src="./images/img-2.jpg" class="product-img" onclick="changeImage('./images/img-2.jpg')"/>
+        <img src="./images/img-3.jpg" class="product-img" onclick="changeImage('./images/img-3.jpg')"/>
+        <img src="./images/img-4.jpg" class="product-img" onclick="changeImage('./images/img-4.jpg')"/>
+        <img src="./images/img-5.jpg" class="product-img" onclick="changeImage('./images/img-5.jpg')"/>
+    </div>
+
+
+    <script>
+        function changeImage(imageName) {
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src=imageName;
+        }
+    </script>
+
+</body>
+</html>
